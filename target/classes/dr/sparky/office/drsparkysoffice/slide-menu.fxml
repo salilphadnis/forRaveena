@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<Pane fx:id="slideMenuPane" prefWidth="200" maxWidth="200" layoutX="-200" style="-fx-background-color: lightgray;"
+      xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="CENTER" spacing="10">
+            <Button text="Patients Message" fx:id="patientMsgBtnId" />
+            <Button text="Patients Info" fx:id="patientInfoBtnId" />
+        </VBox>
+    </children>
+</Pane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="642.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dr.sparky.office.drsparkysoffice.controller.LoginController">
+   <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="277.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/logo.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="247.0" layoutY="102.0" text="Dr Sparky's Office" textFill="#616161">
+      <font>
+         <Font name="Arial Bold" size="13.0" />
+      </font>
+   </Label>
+   <Label layoutX="180.0" layoutY="157.0" text="Sign In">
+      <font>
+         <Font name="Arial Bold" size="22.0" />
+      </font>
+   </Label>
+   <Label layoutX="180.0" layoutY="189.0" text="Hi, Nice to see you again." textFill="#545454">
+      <font>
+         <Font name="Arial" size="12.0" />
+      </font>
+   </Label>
+   <Button layoutX="178.0" layoutY="360.0" mnemonicParsing="false" onAction="#signInButtonAction" prefHeight="40.0" prefWidth="254.0" style="-fx-background-color: red;" text="Sign In" textFill="WHITE" />
+   <TextField fx:id="userNameTxtFldID" layoutX="178.0" layoutY="236.0" prefHeight="40.0" prefWidth="254.0" promptText="Enter Email" />
+   <Label layoutX="180.0" layoutY="215.0" text="Email" textFill="RED">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="180.0" layoutY="282.0" text="Password" textFill="RED">
+      <font>
+         <Font name="Arial Bold" size="12.0" />
+      </font>
+   </Label>
+   <PasswordField fx:id="passwordTxtFldID" layoutX="180.0" layoutY="307.0" prefHeight="40.0" prefWidth="254.0" promptText="Enter password" />
+   <Button layoutX="517.0" layoutY="584.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: red;" text="Back" textFill="WHITE" />
+   <Label fx:id="errLblId" layoutX="35.0" layoutY="518.0" prefHeight="26.0" prefWidth="254.0" textFill="#dd9393" />
+</AnchorPane>
